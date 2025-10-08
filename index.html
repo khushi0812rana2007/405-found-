@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SATHI 24/7</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="backend">
+  <header>
+    <h1>SATHI 24/7</h1>
+    <p class="sub">Simple, local-first healthcare guidance</p>
+
+    <!-- Action Buttons Section -->
+    <div class="header-buttons">
+      <button id="emergency-btn" class="btn emergency">🚨 Emergency</button>
+      <select id="language-select" class="btn language">
+        <option value="en" selected>English</option>
+        <option value="hi">हिन्दी (Hindi)</option>
+      </select>
+    </div>
+  </header>
+  <main id="chat-area">
+    <ul id="messages"></ul>
+  </main>
+  <form id="chat-form">
+    <input id="input-msg" type="text" placeholder="Describe your symptom, or ask for nearest clinic" autocomplete="off"/>
+    <button type="submit">Send</button>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
